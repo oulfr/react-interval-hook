@@ -39,9 +39,11 @@ const Counter = ({ delay = 1000 }) => {
   const [counter, setCounter] = useState(0);
 
   useInterval(
-    (count) => {
+    (count, setCount) => {
       if (count === 5) {
         setCounter("finish");
+        //reset the counter
+        setCount(1)
       } else {
         setCounter(count);
       }
