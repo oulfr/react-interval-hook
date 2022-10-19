@@ -1,4 +1,4 @@
-# @use-it/interval
+# react-interval-hook
 
 A custom React Hook to use `setInterval` efficiently.
 
