@@ -10,7 +10,7 @@ copy the script to your project (for example in hook folder)
 Here is a basic setup.
 
 ```js
-useInterval(callback, delay);
+useInterval(callback, delay, limit);
 ```
 
 ### Parameters
