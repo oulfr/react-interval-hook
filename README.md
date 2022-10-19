@@ -3,7 +3,7 @@
 A custom React Hook to use `setInterval` efficiently.
 
 ## Installation
-copy the script in your project for example in hook folder
+copy the script to your project (for example in hook folder)
 
 ## Usage
 
@@ -36,13 +36,13 @@ import React, { useState } from 'react';
 import useInterval from '../hooks/use-interval';
 
 const Counter = ({ delay = 1000 }) => {
-  const [count, setCount] = useState(0);
+  const [counter, setCounter] = useState(0);
 
-  useInterval(() => {
-    setCount((currentCount) => currentCount + 1);
+  useInterval((count) => {
+    setCounter(count);
   }, delay);
 
-  return <h1>{count}</h1>;
+  return <h1>{counter}</h1>;
 };
 
 export default Counter;
