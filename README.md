@@ -60,7 +60,7 @@ export default Counter;
 
 You can view/edit the sample code above on CodeSandbox.
 
-[![Edit demo app on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)(https://codesandbox.io/s/use-interval-fmy1i5-forked-bkg4wh)
+[![Edit demo app on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-interval-fmy1i5-forked-bkg4wh)
 
 ## License
 
