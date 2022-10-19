@@ -32,15 +32,23 @@ This hook returns the intervalk if you need to clear it manually.
 Let's look at some sample code. Here is a `Counter` component that counts up every second.
 
 ```js
-import React, { useState } from 'react';
-import useInterval from '../hooks/use-interval';
+import React, { useState } from "react";
+import useInterval from "./use-interval";
 
 const Counter = ({ delay = 1000 }) => {
   const [counter, setCounter] = useState(0);
 
-  useInterval((count) => {
-    setCounter(count);
-  }, delay);
+  useInterval(
+    (count) => {
+      if (count === 5) {
+        setCounter("finish");
+      } else {
+        setCounter(count);
+      }
+    },
+    delay,
+    5
+  );
 
   return <h1>{counter}</h1>;
 };
@@ -52,7 +60,7 @@ export default Counter;
 
 You can view/edit the sample code above on CodeSandbox.
 
-[![Edit demo app on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)]([https://codesandbox.io/s/use-interval-fmy1i5-fmy1i5](https://codesandbox.io/s/use-interval-fmy1i5-fmy1i5))
+[![Edit demo app on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)(https://codesandbox.io/s/use-interval-fmy1i5-forked-bkg4wh)
 
 ## License
 
