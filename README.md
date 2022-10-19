@@ -37,6 +37,7 @@ import useInterval from "./use-interval";
 
 const Counter = ({ delay = 1000 }) => {
   const [counter, setCounter] = useState(0);
+  const [runIt, setRunIt] = useState(false)
 
   useInterval(
     (count, setCount) => {
@@ -48,7 +49,7 @@ const Counter = ({ delay = 1000 }) => {
         setCounter(count);
       }
     },
-    delay,
+    runIt ? delay:null,
     5
   );
 
