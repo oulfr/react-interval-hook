@@ -21,7 +21,7 @@ Here are the parameters that you can use.
 | :--------- | :-----------------------------------------------------------------------------------------|
 | `callback` | A function that will be called every `delay` milliseconds.                                |
 | `delay`    | A number representing the delay in msecs. Set to `null` to "pause" the interval.          |
-| `limi`     | Limit the number of run. Set to `null` to "run" the interval infinitely.                  |
+| `limit`     | Limit the number of run. Set to `null` to "run" the interval infinitely.                  |
 
 ### Return
 
@@ -49,7 +49,7 @@ const Counter = ({ delay = 1000 }) => {
         setCounter(count);
       }
     },
-    runIt ? delay:null,
+    runIt ? delay : null,
     5
   );
 
