@@ -25,7 +25,7 @@ Here are the parameters that you can use.
 
 ### Return
 
-This hook returns the intervalk if you need to clear it manually.
+This hook returns the interval if you need to clear it manually.
 
 ## Example
 
