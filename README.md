@@ -21,11 +21,11 @@ Here are the parameters that you can use.
 | :--------- | :-----------------------------------------------------------------------------------------|
 | `callback` | A function that will be called every `delay` milliseconds.                                |
 | `delay`    | A number representing the delay in msecs. Set to `null` to "pause" the interval.          |
-| `limi`     | Limit the number of run. Set to `null` to "run" the interval infinitely.                  |
+| `limit`     | Limit the number of run. Set to `null` to "run" the interval infinitely.                  |
 
 ### Return
 
-This hook returns the intervalk if you need to clear it manually.
+This hook returns the interval if you need to clear it manually.
 
 ## Example
 
@@ -49,7 +49,7 @@ const Counter = ({ delay = 1000 }) => {
         setCounter(count);
       }
     },
-    runIt ? delay:null,
+    runIt ? delay : null,
     5
   );
 
